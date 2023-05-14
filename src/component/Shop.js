@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Shop(props) {
-    console.log("props", props);
+    // console.log("shop", props.addToCartHandler);
     return (
         <div className='container'>
             <div className='item_container py-5'>

@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import cardItem from "./reducer";
-
-export default combineReducers({
-    cardItem,
+import cardItems from "./reducer";
+const rootReducer = combineReducers({
+    cardItems,
 });
-    
+
+export default rootReducer;

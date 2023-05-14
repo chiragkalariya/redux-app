@@ -1,6 +1,16 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+function Navbar(props) {
+    console.log("navbar", props.data);
 
-const Navbar = () => {
+
+    // const dispatch = useDispatch();
+    const posts = useSelector((state) => state.list);
+
+    // React.useEffect(() => {
+    //     dispatch(loadposts());
+    // }, [dispatch]);
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,7 +39,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div>
-                        <button className='btn btn-dark'>Cart</button>
+                        <button className='btn btn-dark cart_button'>Cart<span className='cart_count'>{props.data}</span></button>
                     </div>
                 </div>
             </nav>

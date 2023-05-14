@@ -1,6 +1,6 @@
 import Shop from "../component/Shop"
 import { connect } from "react-redux"
-import { addToCart } from "../services/action/Action"
+import { addToCart } from "../services/action/action"
 
 const mapDispatchToProps = dispatch => ({
     addToCartHandler:data => dispatch(addToCart(data))
